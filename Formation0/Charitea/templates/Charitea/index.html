@@ -8,11 +8,11 @@
         <tr>
             <th>Last donations</th>
         </tr>
-        <tr>
-            {% for donation in latest_donations %}
+        {% for donation in latest_donations %}
+            <tr>
                 <td>{{donation.slug}} donated ${{donation.amount}} AUD</td>
-            {% endfor %}
-        </tr>
+            </tr>
+        {% endfor %}
     </table>
 </div>
 
