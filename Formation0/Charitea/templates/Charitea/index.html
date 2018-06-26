@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div align="center">
+    <h1>Charitea</h1>
+    <table>
+        <tr>
+            <th>Last donations</th>
+        </tr>
+        <tr>
+            {% for donation in latest_donations %}
+                <td>{{donation.slug}} donated ${{donation.amount}} AUD</td>
+            {% endfor %}
+        </tr>
+    </table>
+</div>
+
+{% endblock %}
