@@ -1,4 +1,4 @@
 Django>=2
 django-extensions>=2
-djangorestframework==3.9.1
+djangorestframework==3.11.2
 django-crispy-forms==1.7.0
